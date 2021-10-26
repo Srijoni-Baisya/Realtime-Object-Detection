@@ -6,10 +6,17 @@ status = "";
 //var to hold all the results
 objects = [];
 
+
+
 function setup(){
-    canvas = createCanvas(380,380);
-    canvas.position(530,100);
-    //canvas.center();
+    canvas = createCanvas(380,380); 
+    var width = screen.width;
+    if (width<992){
+        canvas.center();
+    }
+    else{
+        canvas.position(530,100);
+    }
 
     //access the webcam
     video = createCapture(VIDEO);
