@@ -11,7 +11,7 @@ objects = [];
 function setup(){
     canvas = createCanvas(380,380); 
     var width = screen.width;
-    if (width<992){
+    if (width<768){
         canvas.center();
     }
     else{
